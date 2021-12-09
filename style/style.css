@@ -213,16 +213,28 @@ width: 100%;
     flex-basis: 100%;
     flex: 1 0 100%;
 /*    flex-direction: row;*/
-    background: grey;
 /*    flex-wrap: wrap;*/
-    height: 200px;
+    height: 250px;
 }
 
 .h1ClothingCards{
-    color: white;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color: #3b3b3b;
 }
 
-
+.text-reset{
+     
+}
+/*changed colour of navigation font*/
+.text-nav{
+    color: #3b3b3b;
+}
+/*pad the top of the mid page navbar*/
+.midPageNav{
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
 
 /*
 .dressesContainer{
@@ -259,4 +271,11 @@ width: 100%;
     text-align: end;
 }
 
+/***********Modals*****************/
+.quantity{
+    padding-right: 20%;
+}
 
+.btn-sm{
+    width: 100%;
+}

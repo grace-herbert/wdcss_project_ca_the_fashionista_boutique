@@ -3,6 +3,7 @@
 
 <head>
     <title>The Fashionista Boutique Homepage</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -13,322 +14,309 @@
 <body>
     <!--    ****************header******************-->
     <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12 header">
-            <div class="row">
-                <div class="col-lg-3">
-                      <img src="images/logo.png" alt="The Fashionista logo with writing and a black and white image of a woman" class="imgLogo">
-                 
-            </div>     
+        <div class="row">
+            <div class="col-lg-12 header">
+                <div class="row">
+                    <div class="col-lg-3">
+                          <img src="images/logo.png" alt="The Fashionista logo with writing and a black and white image of a woman" class="imgLogo">
+
+                    </div>     
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-        
+    </div>   
     
 <!--    ****************Navbar for xl******************-->
     
-           <nav class="navbar navbar-expand-lg navbar-dark bg-light" style= "background-color: #3b3b3b;">
-  <div class="container-fluid"  id="navcol">
-    <a class="navbar-brand" href="#">The Fashionista Boutique</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item lessWide">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item lessWide">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item wider">
-          <a class="nav-link" href="#">Most Popular</a>
-        </li>
-          <li class="nav-item wider">
-          <a class="nav-link" href="#">Summer Fun</a>
-        </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Clothing
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Dresses</a></li>
-            <li><a class="dropdown-item" href="#">Tops</a></li>
-            <li><a class="dropdown-item" href="#">Skirts</a></li>
-            <li><a class="dropdown-item" href="#">Trousers</a></li>
-            <li><a class="dropdown-item" href="#">Coats</a></li>
-            <li><a class="dropdown-item" href="#">Accessories</a></li>
-          </ul>
-        </li>
-          
-          <li class="nav-item wider">
-          <a class="nav-link" href="#">Coming Soon</a>
-        </li>
-          <li class="nav-item wider">
-          <a class="nav-link" href="#"><img src="images/user.png" alt="Abstract person image. Login image. User image." class="imgUser"></a>
-        </li>
-          <li class="nav-item wider">
-          <a class="nav-link" href="#"><img src="images/cart.png" alt="Abstract cart image. Basket image." class="imgCart"></a>
-        </li>
-        
-          
-<!--
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Clothing
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Dresses</a></li>
-            <li><a class="dropdown-item" href="#">Tops</a></li>
-            <li><a class="dropdown-item" href="#">Skirts</a></li>
-            <li><a class="dropdown-item" href="#">Trousers</a></li>
-            <li><a class="dropdown-item" href="#">Coats</a></li>
-            <li><a class="dropdown-item" href="#">Accessories</a></li>
-          </ul>
-        </li>
--->
-      </ul>
-    </div>
-  </div>
-</nav> 
-    <div class="container">
-<!--       ******************** carousel *********************-->
-<div class="row" "slides">
-    <div class="col-lg-12">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active img1">
-              <img src="images/1.png" class="d-block w-100" alt="Woman wearing a white dress leaning against a wall splashed with yellow and blue colours">
-            </div>
-            <div class="carousel-item img2">
-              <img src="images/6.png" class="d-block w-100" alt="Woman in white dress sitting on sand in front of the sea">
-            </div>
-            <div class="carousel-item img3">
-              <img src="images/2.png" class="d-block w-100" alt="Woman in leather jacket in field">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        </div>
-    </div>
-        
-        <br>
-<!--  ***************row 2 cards ******************-->
-<div class="row">
-    <div class= "col-sm-5 col-lg-4 card1row"> 
-        <div class="rowOfThree">
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_15.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Top Sellers</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-        
-        <div class="col-sm-5 col-lg-4" > 
-        <div class="rowOfThree" >
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_11_2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Summer Fun</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-        <div class= "col-sm-5 col-lg-4" > 
-        <div class="rowOfThree">
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_2cropped48.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Accessories Acessories!</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-    <div class= "col-sm-5 col-lg-4 card1row" > 
-        <div class="rowOfThree">
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_2_3.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Beach Ready!</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-    <div class="col-sm-5 col-lg-4"> 
-        <div class="rowOfThree">
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_132.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dresses</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-        
-        <div class="col-sm-5 col-lg-4" > 
-        <div class="rowOfThree">
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_131.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Tops</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-        <div class="col-sm-5 col-lg-4 card1row" > 
-        <div class="rowOfThree">
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_147.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Skirts</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-    <div class="col-sm-5 col-lg-4" > 
-        <div class="rowOfThree">
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_127.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Jackets</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-    <div class="col-sm-5 col-lg-4" > 
-        <div class="rowOfThree">
-        <div class="card" style="width: 18rem;">
-          <img src="images/rsz_1sportsbra.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Activewear</h5>
-            <a href="#" class="btn btn-dark">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-    </div>
-        
- </div>
-        <br>
-        <br>
-        <br>
-<!--  ***************footer ******************-->
-            <div class="row">
-                <div class="col-lg-12 footer">
-                    <div class="row">
- <!--***********************Contact Us**********************-->
-            <div class="col-lg-4 contact">
-                <h1 class = "footerH1">Contact Us</h1>
-                <form>
-                  <label for="fname" class="conLabel conFName">First name:</label>
-                    <br>
-                  <input type="text" id="fname" name="fname" class="conCorners">
-                    <br>
-                  <label for="lname" class="conLabel">Last name:</label>
-                    <br>
-                  <input type="text" id="lname" name="lname" class="conCorners">
-                    <br>
-                  <label for="email" class="conLabel">email:</label>
-                    <br>
-                  <input type="email" id="conEmail" name="email" class="conCorners">
-                    <br>
-                  <label for="query" class="conLabel">Query:</label>
-                    <br>
-                  <input type="text" id="conQuery" name="query" class="conCorners">
-                    <br>
-                    <br>
-<!--                    <button class="btn-submit">Submit</button>-->
-                    <input type="submit" value="Submit" class="conCorners sbmtbtn">
-                </form>
-            
-                
-            </div>
-<!--  ***************register ******************-->
-            <div class="col-lg-4 signUp">
-                <h1 class="footerH1">Register here: </h1>
-              <form class="row g-3 needs-validation" novalidate>
-                  <div>
-                <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text"  class="form-control" id="validationCustom01" value="Mark" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-                <label for="validationCustom02" class="form-label regLName">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-                  </div>
-             <div>
-              <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Email</label>
-                <div class="input-group has-validation regEmail">
-                  <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                  <div class="invalid-feedback">
-                    Please choose a username.
-                  </div>
-                </div>
-              </div>
-                 </div>
-              
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Agree to terms and conditions
-                  </label>
-                  <div class="invalid-feedback">
-                    You must agree before submitting.
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-submit" type="submit">Submit</button>
-              </div>
-            </form>
-        </div>
-                
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light" style= "background-color: #3b3b3b;">
+      <div class="container-fluid"  id="navcol">
+        <a class="navbar-brand" href="#">The            Fashionista Boutique</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item lessWide">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item lessWide">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item wider">
+              <a class="nav-link" href="#mostPopular">Most Popular</a>
+            </li>
+            <li class="nav-item wider">
+              <a class="nav-link" href="#summerFun">Summer Fun</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Clothing
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#dresses">Dresses</a></li>
+                <li><a class="dropdown-item" href="#tops">Tops</a></li>
+                <li><a class="dropdown-item" href="#skirts">Skirts</a></li>
+                <li><a class="dropdown-item" href="#trousers">Trousers</a></li>
+                <li><a class="dropdown-item" href="#coats">Coats</a></li>
+                <li><a class="dropdown-item" href="#accessories">Accessories</a></li>
+              </ul>
+            </li>
 
-     
+            <li class="nav-item wider">
+              <a class="nav-link" href="#">Coming Soon</a>
+            </li>
+            <li class="nav-item wider">
+              <a class="nav-link" href="#"><img src="images/user.png" alt="Abstract person image. Login image. User image." class="imgUser"></a>
+            </li>
+              <li class="nav-item wider">
+              <a class="nav-link" href="#"><img src="images/cart.png" alt="Abstract cart image. Basket image." class="imgCart"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+    
+ <!--       ************ body container***********-->   
+    <div class="container-fluid">
+<!--       ******************** carousel *********************-->
+        <div class="row" "slides">
+            <div class="col-lg-12">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active img1">
+                      <img src="images/1.png" class="d-block w-100" alt="Woman wearing a white dress leaning against a wall splashed with yellow and blue colours">
+                    </div>
+                    <div class="carousel-item img2">
+                      <img src="images/6.png" class="d-block w-100" alt="Woman in white dress sitting on sand in front of the sea">
+                    </div>
+                    <div class="carousel-item img3">
+                      <img src="images/2.png" class="d-block w-100" alt="Woman in leather jacket in field">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+        </div>
+
+                <br>
+<!--  ***************row 2 cards ******************-->
+        <div class="row">
+            <div class= "col-sm-5 col-lg-4 card1row"> 
+                <div class="rowOfThree">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/rsz_15.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Most Popular</h5>
+                            <a href="#mostPopular" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5 col-lg-4" > 
+                <div class="rowOfThree" >
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/rsz_11_2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Summer Fun</h5>
+                            <a href="#summerFun" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class= "col-sm-5 col-lg-4" > 
+                <div class="rowOfThree">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/rsz_2cropped48.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Accessories Acessories!</h5>
+                            <a href="#accessories" class="btn btn-dark">Go somewhere</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class= "col-sm-5 col-lg-4 card1row" > 
+                <div class="rowOfThree">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/rsz_2_3.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Beach Ready!</h5>
+                            <a href="#beachReady" class="btn btn-dark">Go somewhere</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-lg-4"> 
+                <div class="rowOfThree">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/rsz_132.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Dresses</h5>
+                            <a href="#dresses" class="btn btn-dark">Go somewhere</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5 col-lg-4" > 
+                <div class="rowOfThree">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/rsz_131.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Tops</h5>
+                            <a href="#tops" class="btn btn-dark">Go somewhere</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-5 col-lg-4 card1row" > 
+                <div class="rowOfThree">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/rsz_147.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Skirts</h5>
+                        <a href="#skirts" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-5 col-lg-4" > 
+                <div class="rowOfThree">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/rsz_127.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Coats</h5>
+                            <a href="#coats" class="btn btn-dark">Go somewhere</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-5 col-lg-4" > 
+                <div class="rowOfThree">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/rsz_1sportsbra.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Activewear</h5>
+                            <a href="#activeWear" class="btn btn-dark">Go somewhere</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <br>
+                <br>
+                <br>
+<!--  ***************footer ******************-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 footer">
+                <div class="row">
+ <!--***********************Contact Us**********************-->
+                    <div class="col-lg-4 contact">
+                        <h1 class = "footerH1">Contact Us</h1>
+                        <form>
+                          <label for="fname" class="conLabel conFName">First name:</label>
+                            <br>
+                          <input type="text" id="fname" name="fname" class="conCorners">
+                            <br>
+                          <label for="lname" class="conLabel">Last name:</label>
+                            <br>
+                          <input type="text" id="lname" name="lname" class="conCorners">
+                            <br>
+                          <label for="email" class="conLabel">email:</label>
+                            <br>
+                          <input type="email" id="conEmail" name="email" class="conCorners">
+                            <br>
+                          <label for="query" class="conLabel">Query:</label>
+                            <br>
+                          <input type="text" id="conQuery" name="query" class="conCorners">
+                            <br>
+                            <br>
+        <!--                    <button class="btn-submit">Submit</button>-->
+                          <input type="submit" value="Submit" class="conCorners sbmtbtn">
+                        </form>
+                    </div>
+<!--  ***************register ******************-->
+                    <div class="col-lg-4 signUp">
+                        <h1 class="footerH1">Register here: </h1>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div>
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text"  class="form-control" id="validationCustom01" value="Mark" required>
+                                    <div class="valid-feedback">
+                                      Looks good!
+                                    </div>
+                                <label for="validationCustom02" class="form-label regLName">Last name</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                                    <div class="valid-feedback">
+                                      Looks good!
+                                    </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <label for="validationCustomUsername" class="form-label">Email</label>
+                                    <div class="input-group has-validation regEmail">
+                                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                          <div class="invalid-feedback">
+                                            Please choose a username.
+                                          </div>
+                                    </div>
+                          </div>
+                             
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                              </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                  </div>
+                            </div>
+                          </div>
+                            
+                          <div class="col-12">
+                            <button class="btn btn-submit" type="submit">Submit</button>
+                          </div>
+                        </form>
+                    </div>
+
     <!--  ***************business address ******************-->
 
-    
-            <div class="col-lg-4 businessAddress">
-                <br>
-                <h5>
-                    Address:<br>
-                    <br>
-                    The Fashionista Boutique<br>
-                54 Wine St.<br>
-                Sligo,<br>
-                Co. Sligo </h5>
-            </div>
+                    <div class="col-lg-4 businessAddress">
+                        <br>
+                        <h5>
+                            Address:<br>
+                            <br>
+                            The Fashionista Boutique<br>
+                            54 Wine St.<br>
+                            Sligo,<br>
+                            Co. Sligo </h5>
+                    </div>
+                </div>
+            </div> 
         </div>
-    </div> 
-</div>
-<!--***************row 4 accordian ******************
+<!--
+***************row 4 accordian ******************
     <div class="row" "accordian">
     <div class="col-lg-4"> 
     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -365,7 +353,8 @@
         </div>
     </div>
  </div>
-</div>
+-->
+  </div>
             
 
 
