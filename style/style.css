@@ -279,3 +279,13 @@ width: 100%;
 .btn-sm{
     width: 100%;
 }
+
+#mPrice{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.text-quan{
+    color: black;
+    text-decoration: none;
+}
