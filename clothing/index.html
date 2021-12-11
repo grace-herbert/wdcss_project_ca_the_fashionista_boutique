@@ -109,11 +109,11 @@
                           <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           </button>
                           <ul class="dropdown-menu">
-                              <li><a class="text-quan" onclick = "getQuantity1()">1</a></li>
-                              <li><a class="text-quan" onclick = "getQuantity2()">2</a></li>
-                              <li><a class="text-quan" onclick = "getQuantity3()">3</a></li>
-                              <li><a class="text-quan" onclick = "getQuantity4()">4</a></li>
-                              <li><a class="text-quan" onclick = "getQuantity5()">5</a></li>
+                              <li><a class="text-quan" id = "quantity1">1</a></li>
+                              <li><a class="text-quan" id = "quantity2">2</a></li>
+                              <li><a class="text-quan" id = "quantity3">3</a></li>
+                              <li><a class="text-quan" id = "quantity4">4</a></li>
+                              <li><a class="text-quan" id = "quantity5">5</a></li>
                           </ul>
                         </div>
                         <div class="col-lg-12"><h4 id = "mPrice"></h4>
@@ -124,7 +124,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-dark" onclick="addToOrder()">Add to Cart</button>
+            <button type="button" class="btn btn-dark" id="addToBasket">Add to Basket</button>
           </div>
         </div>
       </div>
