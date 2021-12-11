@@ -181,7 +181,10 @@ width: 100%;
 }
 
 /***************Clothingpage*****************/
-
+.containerCenter{
+    padding-left: 8%;
+    
+}
 /*********banner**********/
 
 .bannerContainer{
