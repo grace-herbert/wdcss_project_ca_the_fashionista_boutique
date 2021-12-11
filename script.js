@@ -115,18 +115,36 @@ $(document).ready(function(){
     
 
 
-//*****Setting Quantity of Order ***************
+//*****Orders ***************
 
-$(document).ready(function(){
-    $("#addToBasket").on('click', [tempObj], addToBasket);
+add orders to basket using the tempObj variable
+
+function addToBasket(){
     
-    function addToBasket(tempObj){
-        basket.push(tempObj);
-        console.log(basket.toString());
-    }
+    basket.push(tempObj);
     
-});
+}
+
+function displayOrders(){
         
+        for(i=0; i<basket.length; i++){
+        console.log(basket[i]);
+    
+}
+}
+
+
+// jQuery to change background color of footer and buttons on payment page       
+$(document).ready(function(){
+    $(".basketFooter").css("background-color","white");
+    $(".basketFooter").css("color","#3b3b3b");
+    $(".basketRegSubmitBtn").css("background-color","#3b3b3b");
+    $(".basketRegSubmitBtn").css("color","white");
+    $(".basketConSubmitBtn").css("background-color","#3b3b3b");
+    $(".basketConSubmitBtn").css("color","white");
+});
+
+
 
 
 

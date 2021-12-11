@@ -66,20 +66,24 @@
 
 .footer{
     background-color: #3b3b3b;
-    height: 35rem;
+    height: 100%;
     color: white;
 }
 
 .businessAddress{
     padding-top: 50px;
     padding: 20px;
+    
 }
 
-/*
-.col-lg-3{
-    padding-left: 25px;
-    padding-right: 25px;
-}*/
+#footerLogo{
+    padding-top: 20%;
+}
+
+.h5Address{
+    font-weight: normal;
+}
+
 
 .form-label{
     width: 100px;
@@ -102,6 +106,7 @@
 .regLName{
     padding-top: 7px;
 }
+
 
 #conQuery{
     height: 150px;
@@ -127,6 +132,7 @@
 
 }
 
+/*rounded corners added to labels*/
 .conCorners{
     border-radius: 5px;
     height: 44px;
@@ -252,3 +258,28 @@
     color: black;
     text-decoration: none;
 }
+
+/************basket************/
+
+#basketBody{
+    background: #3b3b3b;
+
+}
+
+.basketHeader{
+    background: white;
+}
+
+.space{
+    height: 30px;
+}
+
+/*rounded corners added*/
+.basket{
+    padding-top: 10%;
+    background: white;
+    width: 70%;
+    height: 500px;
+    border-radius: 15px;
+}
+
