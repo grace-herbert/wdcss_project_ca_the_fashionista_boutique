@@ -1,5 +1,7 @@
+var count = 0;
+
 //******************************************
-//clothing objects with properties to input into modal onclick
+//clothing objects with properties to input into modal onclick. These turned out to be unused and may be deleted by the clean report. But I want to make sure I won't need them first.
 //*******************************************
 
 
@@ -87,7 +89,6 @@ $(document).ready(function(){
   });
 
 
-
 //*****Setting Quantity of Order ***************
 let orderTotal = 0;
 let quantity = 0;
@@ -119,13 +120,6 @@ $(document).ready(function(){
 tempObj = [];
 basket = [];
 
-//add orders to basket using the tempObj variable
-
-function addToBasket(){
-    
-    basket.push(tempObj);
-    
-}
 
 function displayOrders(){
         
@@ -134,6 +128,42 @@ function displayOrders(){
     
 }
 }
+
+//************using json ****************
+
+//I had origionally been trying to carry over an array of JSON objects but it turns out that it's not possible to do that from page to page. However the Sam Cogan suggested using localstorage and showed me how and it works great. Below I decided to use my previously built tempObj and basket vars with the localstorage code and it worked very well. Now to figure out the display! 
+
+var allOrders = "Orders";
+
+function addToBasket(){
+basket.push(tempObj);
+localStorage.setItem(allOrders, JSON.stringify(basket));
+
+
+}
+
+function displayBasket(){
+    var fullBasket = [JSON.parse(localStorage.getItem(allOrders))];
+    alert(fullBasket);
+    
+//    for(i = 0; i < fullBasket.length; i++){
+//        for(j = 0; j < fullBasket[i].length; j++){
+//            document.getElementById("#orderHeading"[i]).innerHTML = fullBasket[i][j].name;
+//        }
+//    }
+    
+//    code below gotten from https://howtocreateapps.com/fetch-and-display-json-html-javascript/ in an effort to display the orders. It isn't working as I keep getting the error Uncaught TypeError: Cannot read properties of null (reading 'append') but I'll work on this tomorrow. There's probably a very easy solution to the display and I'm over complicating it. I'll sleep on it.
+    
+    var orderHolder = document.getElementById("#addOrders");
+    for(i = 0; i < fullBasket.length; i++){
+        for(j = 0; j < fullBasket[i].length; j++){
+            var div = document.createElement("div");
+            div.innerHTML = 'Name: ' + fullBasket[i].name;
+            orderHolder.appendChild(div);
+        }
+    }
+}
+
 
 
 // jQuery to change background color of footer and buttons on payment page       
@@ -149,7 +179,7 @@ $(document).ready(function(){
 var container = document.getElementById("addOrders");
 
 function addOrders(){
-    for(i = 0; i<basket.length; i++){
+    for(i = 0; i < fullBasket.length; i++){
         container.append("<div id = order"+[i]+"></div>");
 //            for(j = 0; j < basket[i].length; j++){ 
 //            order[i].append("<h1>"+basket[i][j].name + "</h1> <br> <p>" + basket[i][j].Description + "</p>");
@@ -159,12 +189,16 @@ function addOrders(){
 }
 
 
-$(document).ready(() => {
-  $('#addOrders').ready(function(){
-      addOrders();
-      displayOrders();
-   
-  })
-  
-});
+//$(document).ready(() => {
+//  $('#addOrders').ready(function(){
+//      addOrders();
+//      displayOrders();
+//   
+//  })
+//  
+//});
 
+
+//*****************Carousel*********************
+
+//$(".carousel").carousel({interval:8000});
