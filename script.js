@@ -2,8 +2,7 @@
 //clothing objects with properties to input into modal onclick
 //*******************************************
 
-let tempObj = [];
-let basket = [];
+
 
 const dress1 = {name: "Georgia Dress", Description: "Elegant green maxi-dress with uniquely designed tree print by Heather McGee", image: "../images/rsz_52.png", price: 120, clicked: false, selectedQuantity: 0, Total: 0};
 
@@ -117,7 +116,10 @@ $(document).ready(function(){
 
 //*****Orders ***************
 
-add orders to basket using the tempObj variable
+tempObj = [];
+basket = [];
+
+//add orders to basket using the tempObj variable
 
 function addToBasket(){
     
@@ -144,13 +146,25 @@ $(document).ready(function(){
     $(".basketConSubmitBtn").css("color","white");
 });
 
+var container = document.getElementById("addOrders");
+
+function addOrders(){
+    for(i = 0; i<basket.length; i++){
+        container.append("<div id = order"+[i]+"></div>");
+//            for(j = 0; j < basket[i].length; j++){ 
+//            order[i].append("<h1>"+basket[i][j].name + "</h1> <br> <p>" + basket[i][j].Description + "</p>");
+//                
+//            }
+    }
+}
 
 
+$(document).ready(() => {
+  $('#addOrders').ready(function(){
+      addOrders();
+      displayOrders();
+   
+  })
+  
+});
 
-
-//$(document).ready(() => {
-//  $('#dresses1btn').on('click',() => {
-//   
-//  })
-//  
-//});

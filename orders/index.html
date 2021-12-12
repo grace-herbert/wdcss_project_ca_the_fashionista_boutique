@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../style/style.css"/>
 </head>
 
-<body id="paymentBody">
+<body id="basketBody">
     <!--    ****************header******************-->
     
 <!--    logo made with image editing in canva-->
@@ -40,13 +40,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item lessWide">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item lessWide">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item wider">
-              <a class="nav-link" href="#mostPopular">Most Popular</a>
+              <a class="nav-link" href="../clothing/index.html#mostPopular">Most Popular</a>
             </li>
             <li class="nav-item wider">
               <a class="nav-link" href="#summerFun">Summer Fun</a>
@@ -56,12 +56,12 @@
                 Clothing
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item"    href="#dresses">Dresses</a></li>
-                <li><a class="dropdown-item"    href="#tops">Tops</a></li>
-                <li><a class="dropdown-item"    href="#skirts">Skirts</a></li>
-                <li><a class="dropdown-item"    href="#trousers">Trousers</a></li>
-                <li><a class="dropdown-item"    href="#coats">Coats</a></li>
-                <li><a class="dropdown-item"    href="#accessories">Accessories</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#dresses">Dresses</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#tops">Tops</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#skirts">Skirts</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#trousers">Trousers</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#coats">Coats</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#accessories">Accessories</a></li>
               </ul>
             </li>
 
@@ -89,8 +89,9 @@
     </div>
     <div class="container-fluid basket">
         <div class="row">
-            <div class="col-lg-9">
-                <h1>Payment</h1>
+            <div id="addOrders" class="col-lg-9" onload="addOrders() displayOrders()">
+                <h1>Orders</h1>
+                <button type="button" class="btn btn-dark"  onclick="displayOrders()"></button>
                 
                 
             </div>

@@ -40,13 +40,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item lessWide">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="../index.html#home">Home</a>
             </li>
             <li class="nav-item lessWide">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item wider">
-              <a class="nav-link" href="#mostPopular">Most Popular</a>
+              <a class="nav-link" href="../clothing/index.html#mostPopular">Most Popular</a>
             </li>
             <li class="nav-item wider">
               <a class="nav-link" href="#summerFun">Summer Fun</a>
@@ -56,12 +56,12 @@
                 Clothing
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item"    href="#dresses">Dresses</a></li>
-                <li><a class="dropdown-item"    href="#tops">Tops</a></li>
-                <li><a class="dropdown-item"    href="#skirts">Skirts</a></li>
-                <li><a class="dropdown-item"    href="#trousers">Trousers</a></li>
-                <li><a class="dropdown-item"    href="#coats">Coats</a></li>
-                <li><a class="dropdown-item"    href="#accessories">Accessories</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#dresses">Dresses</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#tops">Tops</a></li>
+                <li><a class="dropdown-item"    href="#../clothing/index.htmlskirts">Skirts</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#trousers">Trousers</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#coats">Coats</a></li>
+                <li><a class="dropdown-item"    href="../clothing/index.html#accessories">Accessories</a></li>
               </ul>
             </li>
 
@@ -72,7 +72,7 @@
               <a class="nav-link" href="#"><img src="../images/user.png" alt="Abstract person image. Login image. User image." class="imgUser"></a>
             </li>
             <li class="nav-item wider">
-              <a class="nav-link" href="#"><img src="../images/cart.png" alt="Abstract cart image. Basket image." class="imgCart"></a>
+              <a class="nav-link imgCart" href="../orders/index.html#basketBody"><img src="../images/cart.png" alt="Abstract cart image. Basket image."/></a>
             </li>
            </ul>
         </div>
@@ -142,7 +142,9 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-dark" id="addToBasket" onclick="addToBasket()">Add to Basket</button>
-            <button type="button" class="btn btn-dark"  onclick="displayOrders()">Check Orders</button>
+<!--            <a href="../orders/index.html"><button id="goToOrders" type="button" class="btn btn-dark"  onclick="displayOrders()">Check Orders</button></a>-->
+              <button id="goToOrders" type="button" class="btn btn-dark"  onclick="displayOrders()">Check Orders</button>
+              
           </div>
         </div>
       </div>
@@ -185,7 +187,7 @@
       <div class="row mx-auto">
             <div class= "col-sm-5 col-lg-4 card1row"> 
                 <div class="rowOfThree">
-                    <div id="mostPopular" class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem;">
                       <img src="../images/rz3.png" class="card-img-top" alt="Person wearing bright orange tuille tutu.">
                           <div class="card-body">
                             <h5 class="card-title">The Parisien</h5>
